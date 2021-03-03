@@ -1,0 +1,186 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+html, body{
+	height:100%;
+}
+#top{
+	width:100%;
+	background:#2a82e4
+}
+#bottom{
+	width:100%;
+	background:black
+}
+/* 页面顶部样式 */
+#top{
+	height:65px;
+	min-width:1400px;
+	user-select:none;
+}
+#top .div-title{
+	height:65px;
+	float:left;
+}
+#top .div-title span{
+	color:#FFF;
+	font-size:32px;
+	line-height:65px;
+	margin-left:8px;
+}
+#top span{
+	color:white;
+	font-size:15px;
+	line-height:65px;
+}
+#top .div-date{
+	width:auto;
+	height:65px;
+	float:left;
+}
+#top .div-date span{
+	position:absolute;
+	color:white;
+	line-height:0px;
+	font-size:15px;
+	margin-left:8px;
+	margin-top:45px;
+}
+#top .btn-group{
+	line-height:65px;
+	float:right;
+	margin-top:14px;
+	margin-right:15px;
+}
+#top .div-userInfo{
+	float:right;
+	margin-right:16px;
+}
+#top .div-userInfo span{
+	line-height:65px;
+}
+#top .div-userInfo #img-headPortrait{
+	width:45px;
+	height:45px;
+	line-height:65px;
+	background-size:cover;
+}
+#top .div-news{
+	height:65px;
+	float:right;
+	margin-right:16px;
+}
+/* 锟斤拷息锟斤拷示图片小锟斤拷锟� */
+#top .div-news .img-news{
+	width:32px;
+	height:32px;
+	line-height:65px;
+	margin-top:17px;
+}
+#top .div-news .img-news:hover{
+	cursor:pointer;
+	src:/static/img/news-dark.png
+}
+/* 锟斤拷息锟斤拷示小锟斤拷锟� */
+#top .div-news .b-newsAlt{
+	width:12px;
+	height:12px;
+	background-color:red;
+	position:absolute;
+	margin-left:-13px;
+	margin-top:14px;
+	border-radius:10px;
+}
+/* 弹出层样式  */
+.shadeDiv{
+	display:none;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:rgba(0, 0, 0, 0.4);
+	line-height:100%;
+	z-index:2;
+}
+/* 页面中部内容样式 */
+#center{
+	min-width:1400px;
+	max-width:100%;
+	min-height:620px;
+	height:auto;
+	padding:0px;
+	background:#ffffff;
+	overflow:hidden; /* 解决子DIV浮动不能撑开父容器 */
+}
+#right{
+	min-width:1240px;
+	height:auto;
+	position: relative;
+	left: 10px;
+	float:left;
+}
+/* 锟斤拷锟斤拷 */
+#right .title{
+	font-size:25px;
+	font-weight:bold;
+	color:#887E77;
+}
+/* 锟斤拷页 */
+#right .pageNav{
+	width:610px;
+	margin:auto;
+	padding:0px;
+}
+#right .pageNav ul{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+#right table{
+	font-size:13px;
+}
+/* 锟阶诧拷锟斤拷锟斤拷式 */
+#bottom{
+	min-width:1400px;
+	max-width:100%;
+	height:80px;
+	text-align:center;
+	color:#888;
+	line-height:80px;
+	position:relative;
+	bottom:0px;
+}
+/* 锟秸硷拷录 */
+.div_prpmptEmpty{
+	width:100%;
+	height:200px;
+	text-align:center;
+	display:none;
+}
+.div_prpmptEmpty p{
+	font-size:23px;
+	color:red;
+}
+.div_prpmptEmpty img{
+	margin-top:-20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

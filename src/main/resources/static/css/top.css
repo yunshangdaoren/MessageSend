@@ -1,0 +1,158 @@
+/*  */
+.shadeDiv{
+	position:absolute;
+	display:none;
+	z-index:7;
+	left:0px; 
+	top:0px; 
+	right:0px; 
+	bottom:0px;
+    margin:auto;    
+}
+.panel_changeUserPwd{
+	width: 450px;
+	height: 326px;
+	overflow: hide;
+	margin:auto;
+	margin-top:200px;
+	background-color:#fff;
+	z-index:6;
+	padding:0px;
+	display:none;
+}
+
+.panel_callManager{
+	width: 360px;
+	height: 206px;
+	overflow: hide;
+	margin:auto;
+	margin-top:200px;
+	background-color:#fff;
+	z-index:6;
+	padding:0px;
+	display:none;
+}
+
+.panel_changeUserPwd .panel{
+	width:100%;
+	height:100%;
+	border:0px;
+	border-radius:0px;
+}
+.panel_changeUserPwd .panel .panel-heading{
+	background-color:#0085DD;
+	height:46px;
+	padding:0px;
+	border-radius:0px;
+}
+.panel_changeUserPwd .panel .panel-heading label{
+	font-size:18px;
+	line-height:46px;
+	color:#FFF;
+	font-weight:500;
+	margin-left:5px;
+}
+.panel_changeUserPwd .panel .panel_body #form_retrievePwd .form-group{
+	margin-left:0px;
+	margin-right:0px;
+}
+.panel_changeUserPwd .panel .panel-heading #btn_hidePanelChangeUserPwd{
+	float:right;
+	height:38px;
+	margin-top:4px;
+	margin-right:3px;
+	font-size:16px;
+	text-align:center;
+	line-height:15px;
+}
+.panel_changeUserPwd .panel .panel_body{
+	width:100%;
+	height:234px;
+}
+.panel_changeUserPwd .panel .panel_body form{
+	width:100%;
+	height:100%;
+	padding-top:12px;
+	text-align:center;
+}
+.panel_changeUserPwd .panel .panel_body form div{
+	width:100%;
+}
+.panel_changeUserPwd .panel .panel_body #btn_submitRetrievePwd{
+	margin-left:225px;
+	font-size:16px;
+}
+.panel_changeUserPwd .panel .panel_body form input{
+	width:400px;
+	height:50px;
+	padding:0px;
+	margin:auto;
+	padding-left:3px;
+}
+.panel_changeUserPwd .panel .panel_body form .span_erroCurrentPwd{
+	display:none;
+	color:red;
+	font-size:16px;
+	margin-left:30px;
+	margin-top:-2px;
+	margin-bottom:6px;
+	float:left;
+}
+.panel_changeUserPwd .panel .panel_body form #btn_submitChangeUserPwd{
+	display:inline-block;
+	width:70px;
+	margin-left:34px;
+	line-height:30px;
+	font-size:15px;
+}
+
+
+.panel_callManager .panel{
+	width:100%;
+	height:100%;
+	border:0px;
+	border-radius:0px;
+}
+.panel_callManager .panel .panel-heading{
+	background-color:#0085DD;
+	height:46px;
+	padding:0px;
+	border-radius:0px;
+}
+.panel_callManager .panel .panel-heading label{
+	font-size:18px;
+	line-height:46px;
+	color:#FFF;
+	font-weight:500;
+	margin-left:5px;
+}
+.panel_callManager .panel .panel_body #form_retrievePwd .form-group{
+	margin-left:0px;
+	margin-right:0px;
+}
+.panel_callManager .panel .panel-heading #btn_hidePanelCallManager{
+	float:right;
+	height:38px;
+	margin-top:4px;
+	margin-right:3px;
+	font-size:16px;
+	text-align:center;
+	line-height:15px;
+}
+.panel_callManager .panel .panel_body{
+	width:100%;
+	height:234px;
+}
+.panel_callManager .panel .panel_body form{
+	width:100%;
+	height:100%;
+	padding-top:12px;
+	text-align:center;
+}
+.panel_callManager .panel .panel_body form div{
+	width:100%;
+}
+.panel_callManager .panel .panel_body #btn_submitRetrievePwd{
+	margin-left:225px;
+	font-size:16px;
+}

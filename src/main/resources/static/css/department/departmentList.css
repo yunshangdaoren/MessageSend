@@ -1,0 +1,177 @@
+#right table{
+	width:100%;
+	border-top:1px solid black;
+}
+#right .div_search{
+	min-width:1220px;
+	width:100%;
+	height:45px;
+	margin-top:10px;
+}
+#right .div_search form{
+	width:100%;
+	margin-left:10px;
+	display:inline-block;
+}
+#right .div_search .div-addDept{
+	width:410px;
+	float:right;
+}
+#right .div_search form .form-group{
+	display:blcok-inline;
+}
+#right .div_search form .form-group input{
+	width:120px;
+}
+#right .div_search form button{
+	width:80px;
+	margin-left:6px;
+	display:blcok-inline;
+}
+
+/* 娣诲姞閮ㄩ棬淇℃伅寮瑰嚭灞傞潰鏉挎牱寮� */
+.panel_addDepartment{
+	width:600px;
+	height:480px;
+	position:absolute;
+	display:none;
+	z-index:7;
+	left:0px; 
+	top:0px; 
+	right:0px; 
+	bottom:0px;
+    margin:auto;    /* 閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷疯繙閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓锟� */
+    border:0px;
+    background-color:#fff;
+}
+/* 淇敼閮ㄩ棬淇℃伅寮瑰嚭灞傞潰鏉挎牱寮� */
+.panel_updateDepartment{
+	width:600px;
+	height:480px;
+	position:absolute;
+	display:none;
+	z-index:7;
+	left:0px; 
+	top:0px; 
+	right:0px; 
+	bottom:0px;
+    margin:auto;    /* 閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷疯繙閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓锟� */
+    border:0px;
+    background-color:#fff;
+}
+/* 鏄剧ず鑱屽伐璇︾粏淇℃伅寮瑰嚭灞� */
+.panel_employeeDetail{
+	width:500px;
+	height:376px;
+	position:absolute;
+	display:none;
+	z-index:7;
+	left:0px; 
+	top:0px; 
+	right:0px; 
+	bottom:0px;
+    margin:auto;    /* 閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷疯繙閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓锟� */
+    border:0px;
+    background-color:#fff;
+}
+/* 鏄剧ず閮ㄩ棬璇︾粏淇℃伅寮瑰嚭灞� */
+.panel_departmentDetail{
+	width:700px;
+	height:376px;
+	position:absolute;
+	display:none;
+	z-index:7;
+	left:0px; 
+	top:0px; 
+	right:0px; 
+	bottom:0px;
+    margin:auto;    /* 閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷疯繙閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓锟� */
+    border:0px;
+    background-color:#fff;
+}
+
+.div-panel{
+	width:100%;
+	height:100%;
+	border:0px;
+}
+.div-panel .panel-heading{
+	background-color:#0085DD;
+	height:46px;
+	padding:0px;
+	border-radius:0px;
+}
+.div-panel .panel-heading label{
+	font-size:18px;
+	line-height:46px;
+	color:#FFF;
+	font-weight:500;
+	margin-left:5px;
+}
+/* 鍏抽棴娣诲姞閮ㄩ棬淇℃伅寮瑰嚭灞傞潰鏉挎寜閽牱寮� */
+.div-panel .panel-heading #btn-hidePanelAddDepartment{
+	width:80px;
+	float:right;
+	height:38px;
+	margin-top:4px;
+	margin-right:3px;
+	font-size:16px;
+	text-align:center;
+	line-height:15px;
+}
+/* 关闭修改部门信息弹出层按钮样式 */
+.panel_updateDepartment .div-panel .panel-heading #btn-hidePanelUpdateDepartment{
+	width:80px;
+	float:right;
+	height:38px;
+	margin-top:4px;
+	margin-right:3px;
+	font-size:16px;
+	text-align:center;
+	line-height:15px;
+}
+/* 鍏抽棴鑱屽伐璇︾粏淇℃伅寮瑰嚭灞傞潰鏉挎寜閽牱寮� */
+.div-panel .panel-heading #btn-hidePanelEmployeeDetail{
+	width:80px;
+	float:right;
+	height:38px;
+	margin-top:4px;
+	margin-right:3px;
+	font-size:16px;
+	text-align:center;
+	line-height:15px;
+}
+/* 鍏抽棴閮ㄩ棬璇︾粏淇℃伅寮瑰嚭灞傞潰鏉挎寜閽牱寮� */
+.div-panel .panel-heading #btn-hidePanelDepartmentDetail{
+	width:80px;
+	float:right;
+	height:38px;
+	margin-top:4px;
+	margin-right:3px;
+	font-size:16px;
+	text-align:center;
+	line-height:15px;
+}
+/* 娣诲姞鑱屼綅鎵�灞為儴闂ㄣ�佷笂绾ц亴浣嶄俊鎭笅鎷夐�夋嫨鍒楄〃妗嗕俊鎭牱寮� */
+.panel_addDepartment .panel_body #select-deptId, #select-positionId{
+	width:356px;
+	height:auto;
+	min-height:110px;
+	max-height:200px;
+	background-color:#fff;
+	position:absolute;
+	z-index:50;
+	display:none;
+}
+/* 淇敼鑱屼綅鎵�灞為儴闂ㄣ�佷笂绾ц亴浣嶄俊鎭笅鎷夐�夋嫨鍒楄〃妗嗕俊鎭牱寮� */
+#select-updateDeptId, #select-updatePositionId{
+	width:356px;
+	height:auto;
+	min-height:110px;
+	max-height:200px;
+	background-color:#fff;
+	position:absolute;
+	z-index:52;
+	display:none;
+}
+

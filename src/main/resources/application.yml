@@ -1,0 +1,31 @@
+server:
+  port: 8080
+  
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@192.168.0.3:1521:orcl?characterEncoding=utf8
+    username: zl_yd
+    password: zl_yd
+    driver-class-name: oracle.jdbc.OracleDriver
+    thymeleaf:
+    enabled: false
+  mvc:
+    static-path-pattern: /static/**
+    view:
+      #配置视图解析器前缀
+      prefix: /WEB-INF/jsp/
+      #配置视图解析器后缀缀
+      suffix: .jsp
+  #资源路径
+  resources:
+    static-locations:
+    - classpath:/static/
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+    default-property-inclusion: always
+    
+    
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.lqs.entity

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1" targetRuntime="MyBatis3" defaultModelType="flat">
+  	<!-- 数据库连接 -->
+    <jdbcConnection connectionURL="jdbc:oracle:thin:@192.168.0.3:1521:orcl?useUnicode=true&amp;characterEncoding=utf-8;" 
+    	driverClass="oracle.jdbc.OracleDriver" password="zl_yd" userId="zl_yd">
+    	<!-- 针对oracle数据库 -->
+        <property name="remarksReporting" value="true"></property>
+   	</jdbcConnection>
+    <!-- Java实体类所在包名称和项目名称 -->
+    <javaModelGenerator targetPackage="com.lqs.ms.entity" targetProject="demos/src/main/java" />
+    <!-- mapper.xml所在的包(targetPackage)和所在的项目(targetProject) -->
+    <sqlMapGenerator targetPackage="mapping" targetProject="demos/src/main/resources"></sqlMapGenerator>
+    <!-- mapper所在的包(targetPackage)和所在的项目(targetProject) -->
+    <javaClientGenerator targetPackage="com.lqs.ms.mapper" targetProject="demos/src/main/java" type="XMLMAPPER" />
+    <!-- tableName标签表示数据库中的表，可以有多个，
+         
+     -->
+    <table tableName="zhw_领导日报新"  domainObjectName="LeaderMessage">
+      
+    </table>
+  </context>
+</generatorConfiguration>

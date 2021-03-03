@@ -1,0 +1,94 @@
+a{
+	text-decoration:none;
+}
+#right table{
+	width:100%;
+	border-top:1px solid black;
+}
+#right .nav li a{
+	font-size:18px;
+	font-weight:800;
+}
+#right .div_search{
+	min-width:1220px;
+	width:100%;
+	height:45px;
+	margin-top:18px;
+}
+#right .div_search{
+	min-width:1220px;
+	width:100%;
+	height:45px;
+	margin-top:20px;
+}
+#right .div_search form{
+	width:100%;
+	margin-left:10px;
+	display:inline-block;
+}
+#right .div_search .div-addDept{
+	width:410px;
+	float:right;
+}
+#right .div_search form .form-group{
+	display:blcok-inline;
+}
+#right .div_search form .form-group input{
+	width:120px;
+}
+#right .div_search form button{
+	width:80px;
+	margin-left:6px;
+	display:blcok-inline;
+}
+
+
+/* 寮瑰嚭閬僵灞傦紝鐢ㄤ簬鏄剧ず鑱屼綅璇︾粏淇℃伅  */
+.panel_updateUserRole{
+	width:400px;
+	height:266px;
+	position:absolute;
+	display:none;
+	z-index:7;
+	left:0px; 
+	top:0px; 
+	right:0px; 
+	bottom:0px;
+    margin:auto;    /* 闁跨喐鏋婚幏鐑芥晸閺傘倖瀚归柨鐔告灮閹风兘鏁撻弬銈嗗闁跨喐鏋婚幏鐤箼闁跨喐鏋婚幏鐑芥晸閺傘倖瀚归柨鐔告灮閹风兘鏁撻敓锟� */
+    border:0px;
+    background-color:#fff;
+}
+
+.div-panel{
+	width:100%;
+	height:100%;
+	border:0px;
+}
+.div-panel .panel-heading{
+	background-color:#0085DD;
+	height:46px;
+	padding:0px;
+	border-radius:0px;
+}
+.div-panel .panel-heading label{
+	font-size:18px;
+	line-height:46px;
+	color:#FFF;
+	font-weight:500;
+	margin-left:5px;
+}
+/* 閸忔娊妫村ǎ璇插闁劑妫穱鈩冧紖瀵懓鍤仦鍌炴桨閺夛拷 */
+.div-panel .panel-heading #btn-hidePanelUpdateUserRole{
+	width:80px;
+	float:right;
+	height:38px;
+	margin-top:4px;
+	margin-right:3px;
+	font-size:16px;
+	text-align:center;
+	line-height:15px;
+}
+
+
+
+

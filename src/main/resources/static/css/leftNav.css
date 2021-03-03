@@ -1,0 +1,49 @@
+#leftNav{
+	width:140px;
+	height:100%;
+	min-height:620px;
+	background:black;
+	float:left;
+	clear:both;
+}
+#leftNav .modu{
+	width: 100%;
+}
+.modu-head{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background: #444;
+	cursor: pointer;
+	border-bottom:1px solid black;
+}
+.modu-head:hover{
+	background: #666;
+}
+.modu-head p{
+	color: white;
+	font-size:16px;
+	line-height:50px;
+	cursor: pointer;
+}
+.modu-content{
+	width: 100%;
+	display: none;
+}
+.modu-content .content-body{
+	width: 100%;
+	background: white;
+}
+.modu-content .content-body a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid black;
+	font-size: 13px;
+}
+.modu-content .content-body a:hover{
+	background: #DDDDDD;
+}

@@ -1,0 +1,21 @@
+//返回按钮点击事件
+$("#btn-reback").click(function(){
+	history.go(-1);
+});
+//职工离职申请单提交按钮点击事件
+$("#btn-submitAddEmployeeResignInfo").click(function(){
+	$.ajax({
+		url:"/employeeResign/employeeResignSubmit.do",
+		data:$("#form-addEmployeeResignInfo").serialize(),
+		dataType:"json",
+		success:function(result){
+			if(result.code==200){
+				alert(result.msg);
+				window.location.href="/employeeResign/toMyEmployeeResignList.do";
+			}else{
+				alert(result.msg);
+			}
+		}
+	});
+	
+});
