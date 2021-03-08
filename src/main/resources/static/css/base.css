@@ -5,18 +5,20 @@
 html, body{
 	height:100%;
 }
-#top{
+.bodys{
 	width:100%;
-	background:#2a82e4
+	min-width:1650px;
+	height:100%;
+	min-height:800px;
 }
-#bottom{
+#top,#center,#bottom{
 	width:100%;
-	background:black
+	min-width:1800px;
 }
 /* 页面顶部样式 */
 #top{
-	height:65px;
-	min-width:1400px;
+	height:80px;
+	background:#2a82e4;
 	user-select:none;
 }
 #top .div-title{
@@ -78,10 +80,10 @@ html, body{
 	line-height:65px;
 	margin-top:17px;
 }
-#top .div-news .img-news:hover{
+/* #top .div-news .img-news:hover{
 	cursor:pointer;
 	src:/static/img/news-dark.png
-}
+} */
 /* 锟斤拷息锟斤拷示小锟斤拷锟� */
 #top .div-news .b-newsAlt{
 	width:12px;
@@ -106,16 +108,14 @@ html, body{
 }
 /* 页面中部内容样式 */
 #center{
-	min-width:1400px;
-	max-width:100%;
-	min-height:620px;
-	height:auto;
+	min-height:640px;
+	height:88%;
 	padding:0px;
 	background:#ffffff;
 	overflow:hidden; /* 解决子DIV浮动不能撑开父容器 */
 }
 #right{
-	min-width:1240px;
+	min-width:1520px;
 	height:auto;
 	position: relative;
 	left: 10px;
@@ -126,6 +126,10 @@ html, body{
 	font-size:25px;
 	font-weight:bold;
 	color:#887E77;
+}
+
+#right .div_search{
+	margin-top:3px;
 }
 /* 锟斤拷页 */
 #right .pageNav{
@@ -139,16 +143,17 @@ html, body{
 }
 #right table{
 	font-size:13px;
+	width:calc(100vw - 150px);
+	min-width:1400px;
 }
 /* 锟阶诧拷锟斤拷锟斤拷式 */
 #bottom{
-	min-width:1400px;
-	max-width:100%;
 	height:80px;
 	text-align:center;
+	background:black;
 	color:#888;
 	line-height:80px;
-	position:relative;
+	position:fixed;
 	bottom:0px;
 }
 /* 锟秸硷拷录 */

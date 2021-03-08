@@ -1,5 +1,5 @@
 #leftNav{
-	width:140px;
+	width:130px;
 	height:100%;
 	min-height:620px;
 	background:black;
@@ -22,7 +22,7 @@
 }
 .modu-head p{
 	color: white;
-	font-size:16px;
+	font-size:14px;
 	line-height:50px;
 	cursor: pointer;
 }

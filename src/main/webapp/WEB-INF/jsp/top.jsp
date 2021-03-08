@@ -29,7 +29,7 @@
 	</div>
 </div>
 
-<!-- 修改密码遮罩层 -->
+<!-- 整个页面遮罩层 -->
 <div class="shadeDiv">
 	<!-- 弹出层，用于修改密码 -->
 	<div class="panel_changeUserPwd">

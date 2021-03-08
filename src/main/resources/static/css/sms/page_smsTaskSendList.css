@@ -1,0 +1,12 @@
+
+.panel_smsTaskPhoneDetail{
+	width:565px;
+	height:auto;
+	min-height:230px;
+	display:none;
+	position:absolute;
+	left:0px; 
+	top:0px; 
+	font-weight:600;
+    background-color:#808080;
+}

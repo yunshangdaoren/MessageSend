@@ -3,21 +3,20 @@
 <generatorConfiguration>
   <context id="context1" targetRuntime="MyBatis3" defaultModelType="flat">
   	<!-- 数据库连接 -->
-    <jdbcConnection connectionURL="jdbc:oracle:thin:@192.168.0.3:1521:orcl?useUnicode=true&amp;characterEncoding=utf-8;" 
-    	driverClass="oracle.jdbc.OracleDriver" password="zl_yd" userId="zl_yd">
-    	<!-- 针对oracle数据库 -->
-        <property name="remarksReporting" value="true"></property>
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/sms?useUnicode=true&amp;characterEncoding=utf-8&amp;
+    	useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Shanghai" 
+    	driverClass="com.mysql.cj.jdbc.Driver" password="root" userId="root">
    	</jdbcConnection>
     <!-- Java实体类所在包名称和项目名称 -->
-    <javaModelGenerator targetPackage="com.lqs.ms.entity" targetProject="MessageSend/src/main/java" />
+    <javaModelGenerator targetPackage="com.lqs.sms.entity" targetProject="SMSSend/src/main/java" />
     <!-- mapper.xml所在的包(targetPackage)和所在的项目(targetProject) -->
-    <sqlMapGenerator targetPackage="mapping" targetProject="MessageSend/src/main/resources"></sqlMapGenerator>
+    <sqlMapGenerator targetPackage="mapping" targetProject="SMSSend/src/main/resources"></sqlMapGenerator>
     <!-- mapper所在的包(targetPackage)和所在的项目(targetProject) -->
-    <javaClientGenerator targetPackage="com.lqs.ms.mapper" targetProject="MessageSend/src/main/java" type="XMLMAPPER" />
+    <javaClientGenerator targetPackage="com.lqs.sms.mapper" targetProject="SMSSend/src/main/java" type="XMLMAPPER" />
     <!-- tableName标签表示数据库中的表，可以有多个，
          
      -->
-    <table tableName="zhw_lingdaoribao"  domainObjectName="LeaderMessage">
+    <table schema="Library" tableName="library">
       
     </table>
   </context>

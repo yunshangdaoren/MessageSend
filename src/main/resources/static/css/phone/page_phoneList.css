@@ -1,0 +1,50 @@
+.panel_addPhone{
+	width:450px;
+	height:250px;
+	position:absolute;
+	display:none;
+	z-index:7;
+	left:-150px; 
+	top:-100px; 
+	right:0px; 
+	bottom:0px;
+    margin:auto;    /* 閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷疯繙閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓锟� */
+    border:0px;
+    background-color:#fff;
+}
+.panel_addPhone .div-panel{
+	width:100%;
+	height:100%;
+	border:5px;
+}
+.panel_addPhone .div-panel .panel-heading{
+	background-color:#0085DD;
+	height:46px;
+	padding:0px;
+	border-radius:0px;
+}
+.panel_addPhone .div-panel .panel-heading label{
+	font-size:18px;
+	line-height:46px;
+	color:#FFF;
+	font-weight:500;
+	margin-left:5px;
+}
+/* 鍏抽棴娣诲姞閮ㄩ棬淇℃伅寮瑰嚭灞傞潰鏉挎寜閽牱寮� */
+.panel_addPhone .div-panel .panel-heading button{
+	width:80px;
+	float:right;
+	height:38px;
+	margin-top:4px;
+	margin-right:3px;
+	font-size:16px;
+	text-align:center;
+	line-height:15px;
+}
+.panel_addPhone .div-panel .panel_body form{
+	margin-top:25px;
+}
+.panel_addPhone .div-panel .panel_body form button{
+	margin-top:25px;
+}
+
