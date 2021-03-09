@@ -24,11 +24,10 @@ public class SMSTaskController {
 		//短信任务ID
 		//短信任务ID
 		String smsTaskIdStr = request.getParameter("smstaskId");
-		Integer smsTaskId = stingUtil.getInteger(smsTaskIdStr);
 		
 		//短信任务接收人字符串
-		String receivePhoneStr = smsTaskServiceImpl.get(smsTaskId).getReceivePhoneStr();
-		return new JsonCommonResult<Object>("200", receivePhoneStr, "获取短信任务接收人信息！");
+		String receivePhoneStr = smsTaskServiceImpl.get(stingUtil.getInteger(smsTaskIdStr)).getReceivePhoneStr();
+		return new JsonCommonResult<Object>("200", receivePhoneStr, "返回短信任务接收人信息！");
 	}
 	
 	

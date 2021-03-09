@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>组织架构</title>
-<link href="/static/css/phone/page_phoneList.css" rel="stylesheet" />
+<link href="/static/css/view/page_viewList.css" rel="stylesheet" />
 </head>
 <body>
 	<div class="bodys">
@@ -13,48 +13,50 @@
 		<div id="center">
 			<%@ include file="../leftNav.jsp"%>
 			<div id="right">
-				<span class="title">号码列表</span>
+				<div class="div_search">
+  					<button id="btn-viewListReturn" type="button" class="btn btn-success" style="margin-top:9px;width:70px;">返回</button>
+				</div>
 				<ul class="nav nav-tabs">
-					<li role="presentation" class="active"><a href="/libraryView/page_libraryList.do">号码列表</a></li>
+					<li role="presentation" class="active" style="margin-top:9px;"><a href="#">视图列表</a></li>
 				</ul>
 				<div class="div_search">
-					<form class="form-inline" id="form-queryDept" method="get"
-						action="#">
+					<form class="form-inline" id="form-queryDept" method="get" action="#">
 						<div class="form-group">
-							<label for="exampleInputName2">姓名</label> <input type="text"
-								class="form-control" name="deptName" id="input-selectDeptName"
-								value="${deptNameStr }">
-						</div>
-						<div class="form-group">
-							<label for="exampleInputName2">号码</label> <input type="text"
+							<a href="#" id="a_pageViewListLibraryId" style="display:none;">${library.lbId}</a>
+							<a class="a_updateDepartment" href="#" style="text-decoration:none;height:50px;">
+					    		<span class="label label-info" style="font-size:17px;background-color:black;color:red;padding:7px;">
+					    			库类型:${library.libTypeName }&nbsp;&nbsp;&nbsp;库路径:${library.path }&nbsp;&nbsp;&nbsp;库端口:${library.port }
+					    		</span>
+					    	</a>
+							<label for="exampleInputName2" style="margin-left:90px;">视图名称</label> <input type="text"
 								class="form-control" name="deptName" id="input-selectDeptName"
 								value="${deptNameStr }">
 						</div>
 						<button id="btn-resetSelect" type="button" class="btn btn-warning">重置</button>
 						<button id="btn-selectDept" type="submit" class="btn btn-info">查询</button>
-						<button id="btn-addPhone" type="button" class="btn btn-primary">添加号码</button>
+						<button id="btn-addView" type="button" class="btn btn-primary">添加视图</button>
 					</form>
 				</div>
 				<table class="table table-hover" id="table-deptDtail">
 					<thead>
 						<tr>
 							<th>序号</th>
-							<th>姓名</th>
-							<th>号码</th>
+							<th>名称</th>
+							<th>描述</th>
 							<th>操作</th>
 						</tr>
 					</thead>
 					<tbody>
-						<c:forEach items="${pageResult.content }" var="phone">
+						<c:forEach items="${pageResult.content }" var="view">
 							<tr>
-								<td>${phone.phoneId }</td>
-								<td>${phone.name }</td>
-								<td>${phone.number }</td>
+								<td>${view.viId }</td>
+								<td>${view.name }</td>
+								<td>${view.description }</td>
 								<td>
-									<a class="a_updateDepartment" href="#" style="text-decoration:none;">
+									<a class="a_updateView" href="#" style="text-decoration:none;">
 					    				<span class="label label-primary">编辑</span>
 					    			</a>
-					    			<a class="a_deleteDepartment" href="#" style="text-decoration:none;">
+					    			<a class="a_deleteView" href="#" style="text-decoration:none;">
 					    				<span class="label label-danger">删除</span>
 					    			</a>
 								</td>
@@ -88,29 +90,29 @@
 		<%@ include file="../bottom.jsp"%>
 		
 		<!-- 弹出遮罩层，用于添加号码信息 -->
-		<div class="panel_addPhone">
+		<div class="panel_addView">
 			<div class="div-panel">
     			<div class="panel-heading">
-    				<label>添加号码信息</label>
-    				<button id="btn-hidePanelAddPhone" type="button" class="btn btn-success">退出</button>
+    				<label>添加视图信息</label>
+    				<button id="btn-hidePanelAddView" type="button" class="btn btn-success">退出</button>
     			</div>
     			<div class="panel_body">
     				<form style="width:100%;" id="form-addDept" class="form-horizontal" role="form">
   						<div class="form-group" style="margin-top:10px;">
-    						<label for="name" class="col-sm-3 control-label">姓名</label>
+    						<label for="name" class="col-sm-3 control-label">名称</label>
     						<div class="col-sm-8">
-      							<input type="text" class="form-control" name="name" id="input-addPhoneName">
+      							<input type="text" class="form-control" name="name" id="input-addViewName">
     						</div>
   						</div>
   						<div class="form-group" style="margin-top:10px;">
-    						<label for="number" class="col-sm-3 control-label">号码</label>
+    						<label for="number" class="col-sm-3 control-label">描述</label>
     						<div class="col-sm-8">
-      							<input type="text" class="form-control" name="number" id="input-addPhoneNumber">
+      							<input type="text" class="form-control" name="description" id="input-addViewDescription">
     						</div>
   						</div>
   						<div class="form-group">
     						<div class="col-sm-offset-3 col-sm-9">
-      							<button id="btn-submitAddPhone" type="button" class="btn btn-primary">提交</button>
+      							<button id="btn-submitAddView" type="button" class="btn btn-primary">提交</button>
     						</div>
  	 					</div>
 					</form>
@@ -123,5 +125,5 @@
 	</div>
 </body>
 <script type="text/javascript"
-	src="/static/js/phone/page_phoneList.js"></script>
+	src="/static/js/view/page_viewList.js"></script>
 </html>

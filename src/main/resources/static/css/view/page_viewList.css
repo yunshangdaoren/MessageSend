@@ -1,6 +1,6 @@
-.panel_addLibrary{
-	width:770px;
-	height:480px;
+.panel_addView{
+	width:450px;
+	height:250px;
 	position:absolute;
 	display:none;
 	z-index:7;
@@ -12,18 +12,18 @@
     border:0px;
     background-color:#fff;
 }
-.panel_addLibrary .div-panel{
+.panel_addView .div-panel{
 	width:100%;
 	height:100%;
 	border:5px;
 }
-.panel_addLibrary .div-panel .panel-heading{
+.panel_addView .div-panel .panel-heading{
 	background-color:#0085DD;
 	height:46px;
 	padding:0px;
 	border-radius:0px;
 }
-.panel_addLibrary .div-panel .panel-heading label{
+.panel_addView .div-panel .panel-heading label{
 	font-size:18px;
 	line-height:46px;
 	color:#FFF;
@@ -31,7 +31,7 @@
 	margin-left:5px;
 }
 /* 鍏抽棴娣诲姞閮ㄩ棬淇℃伅寮瑰嚭灞傞潰鏉挎寜閽牱寮� */
-.panel_addLibrary .div-panel .panel-heading button{
+.panel_addView .div-panel .panel-heading button{
 	width:80px;
 	float:right;
 	height:38px;
@@ -41,22 +41,10 @@
 	text-align:center;
 	line-height:15px;
 }
-.panel_addLibrary .div-panel .panel_body form{
+.panel_addView .div-panel .panel_body form{
 	margin-top:25px;
 }
-.panel_addLibrary .div-panel .panel_body form button{
+.panel_addView .div-panel .panel_body form button{
 	margin-top:25px;
 }
 
-/* 库视图详情面板  */
-.panel_libraryViewDetail{
-	width:565px;
-	height:auto;
-	min-height:230px;
-	display:none;
-	position:absolute;
-	left:0px; 
-	top:0px; 
-	font-weight:600;
-    background-color:#808080;
-}

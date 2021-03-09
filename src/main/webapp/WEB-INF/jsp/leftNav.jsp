@@ -24,7 +24,7 @@
 	</div>
 	<div class="modu">
 		<div class="modu-head">
-			<p><a href="/libraryView/page_libraryList.do" style="text-decoration:none;color:white;">库路径与视图维护</a></p>
+			<p><a href="/library/page_libraryList.do" style="text-decoration:none;color:white;">库路径与视图维护</a></p>
 		</div>
 	</div>
 	<div class="modu">

@@ -1,3 +1,8 @@
+//返回按钮点击事件
+$("#btn-viewListReturn").click(function(){
+	history.go(-1);
+});
+
 //定义全局部门查询要跳转的地址
 var href = "http://localhost:8080/phone/page_phoneList.do?pageNum=";
 //当前页码
@@ -46,17 +51,18 @@ $("#span-jumPageNum").click(function(){
 	}
 });
 
-//添加号码按钮点击事件
-$("#btn-addPhone").click(function() {
+//添加视图按钮点击事件
+$("#btn-addView").click(function() {
 	//显示弹出层面板
 	$(".shadeDiv").show();
-	$(".panel_addPhone").show();
+	$(".panel_addView").show();
 });
-//添加号码信息弹出层面板提交按钮点击事件
-$("#btn-submitAddPhone").click(function(){
+//添加视图信息弹出层面板提交按钮点击事件
+$("#btn-submitAddView").click(function(){
 	if(addPhoneFormEmptyCheck()){
+		var lbId = $("#a_pageViewListLibraryId").text();
 		$.ajax({
-			url:"/phone/addPhone.do",
+			url:"/phone/addPhone.do?lbId="+lbId,
 			data:$("#form-addDept").serialize(),
 			dataType:"json",
 			success:function(result){
@@ -72,13 +78,13 @@ $("#btn-submitAddPhone").click(function(){
 		});
 	};
 });
-//按钮点击事件：关闭添加号码面板
-$("#btn-hidePanelAddPhone").click(function(){
+//按钮点击事件：关闭添加视图面板
+$("#btn-hidePanelAddView").click(function(){
 	//关闭弹出层面板
 	$(".shadeDiv").hide();
-	$(".panel_addPhone").hide();
+	$(".panel_addView").hide();
 });
-//添加号码面板非空判断
+//添加视图面板非空判断
 function addPhoneFormEmptyCheck(){
 	if($("#input-addPhoneName").val()==''){
 		alert("姓名不能为空！");

@@ -9,7 +9,6 @@ import com.lqs.sms.entity.LibraryType;
 import com.lqs.sms.entity.LibraryTypeExample;
 import com.lqs.sms.mapper.LibraryTypeMapper;
 import com.lqs.sms.service.LibraryTypeService;
-import com.lqs.sms.service.LibraryViewService;
 
 
 @Service

@@ -31,11 +31,9 @@
 								class="form-control" name="deptName" id="input-selectDeptName"
 								value="${deptNameStr }">
 						</div>
-						<button id="btn-resetSelect" type="button" class="btn btn-danger">重置</button>
-						<button id="btn-selectDept" type="submit" class="btn btn-danger">查询</button>
-						<c:if test="${roles.roleId!=3 }">
-							<button id="btn-addLibrary" type="button" class="btn btn-success">添加库路径</button>
-						</c:if>
+						<button id="btn-resetSelect" type="button" class="btn btn-warning">重置</button>
+						<button id="btn-selectDept" type="submit" class="btn btn-info">查询</button>
+						<button id="btn-addLibrary" type="button" class="btn btn-primary">添加库路径</button>
 					</form>
 				</div>
 				<table class="table table-hover" id="table-deptDtail">
@@ -44,8 +42,13 @@
 							<th>序号</th>
 							<th>库类型</th>
 							<th>库路径</th>
-							<th>库描述</th>
+							<th>端口号</th>
+							<th>MySQL数据库名称</th>
+							<th>Oracle SID</th>
+							<th>用户名</th>
+							<th>密码</th>
 							<th>库视图</th>
+							<th>库描述</th>
 							<th>操作</th>
 						</tr>
 					</thead>
@@ -53,14 +56,19 @@
 						<c:forEach items="${pageResult.content }" var="library">
 							<tr>
 								<td>${library.lbId }</td>
-								<td>${library.libTypeName }</td>
+								<td style="font-weight:600;color:blue;">${library.libTypeName }</td>
 								<td>${library.path }</td>
-								<td>${library.description }</td>
+								<td>${library.port }</td>
+								<td>${library.databaseName }</td>
+								<td>${library.sid }</td>
+								<td>${library.userName }</td>
+								<td>${library.password }</td>
 								<td>
-									<a class="a_updateLibrary" href="#" style="text-decoration:none;">
+									<a class="a_editLibraryView" href="#" style="text-decoration:none;">
 					    				<span class="label label-success">编辑</span>
 					    			</a>
 								</td>
+								<td>${library.description }</td>
 								<td>
 									<a class="a_updateLibrary" href="#" style="text-decoration:none;">
 					    				<span class="label label-warning">修改</span>
@@ -112,7 +120,7 @@
 							<label for="lastname" class="col-sm-3 control-label">库类型</label>
 							<div class="col-sm-8">
 								<select class="form-control" name="libType_id"
-									id="select-AddlibType">
+									id="select-addlibType">
 									<option value="" disabled selected hidden>请选择</option>
 								</select>
 							</div>
@@ -120,13 +128,43 @@
 						<div class="form-group" style="margin-top:10px;">
     						<label for="name" class="col-sm-3 control-label">库路径</label>
     						<div class="col-sm-8">
-      							<input type="text" class="form-control" name="path" id="input-addPhoneName">
+      							<input type="text" class="form-control" name="path" id="input-addPath">
+    						</div>
+  						</div>
+  						<div class="form-group" style="margin-top:10px;">
+    						<label for="name" class="col-sm-3 control-label">端口</label>
+    						<div class="col-sm-8">
+      							<input type="text" class="form-control" name="port" id="input-addPort">
+    						</div>
+  						</div>
+  						<div class="form-group" style="margin-top:10px;display:none;" id="div_addDatabaseName">
+    						<label for="name" class="col-sm-3 control-label">MySQL数据库名称</label>
+    						<div class="col-sm-8">
+      							<input type="text" class="form-control" name="databaseName" id="input-addDatabaseName">
+    						</div>
+  						</div>
+  						<div class="form-group" style="margin-top:10px;display:none;" id="div_addSID">
+    						<label for="name" class="col-sm-3 control-label">Oracle SID</label>
+    						<div class="col-sm-8">
+      							<input type="text" class="form-control" name=sid id="input-addSid">
+    						</div>
+  						</div>
+  						<div class="form-group" style="margin-top:10px;">
+    						<label for="number" class="col-sm-3 control-label">用户名</label>
+    						<div class="col-sm-8">
+      							<input type="text" class="form-control" name="userName" id="input-addUserName">
+    						</div>
+  						</div>
+  						<div class="form-group" style="margin-top:10px;">
+    						<label for="number" class="col-sm-3 control-label">密码</label>
+    						<div class="col-sm-8">
+      							<input type="text" class="form-control" name="password" id="input-addPassword">
     						</div>
   						</div>
   						<div class="form-group" style="margin-top:10px;">
     						<label for="number" class="col-sm-3 control-label">库描述</label>
     						<div class="col-sm-8">
-      							<input type="text" class="form-control" name="description" id="input-addPhoneNumber">
+      							<input type="text" class="form-control" name="description" id="input-addDescription">
     						</div>
   						</div>
   						<div class="form-group">
@@ -138,6 +176,15 @@
     			</div>
 			</div>
 		</div>		
+		
+		<!-- 弹出层，用于显示库路径对应的视图详细信息 -->
+		<div class="panel panel-primary panel_libraryViewDetail" style="display:show;position:absolute;">
+			<div class="panel-heading">
+    			<h5 class="panel-title">库视图详情</h5>
+  			</div>
+			<div class="panel-body"></div>
+		</div>
+		
 		
 	</div>
 

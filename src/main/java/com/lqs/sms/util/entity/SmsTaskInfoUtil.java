@@ -13,7 +13,7 @@ import com.lqs.sms.service.impl.ViewServiceImpl;
 
 
 /**
- * 库实体信息封装工具类
+ * 短信任务信息封装工具类
  * @author luckyliuqs
  *
  */

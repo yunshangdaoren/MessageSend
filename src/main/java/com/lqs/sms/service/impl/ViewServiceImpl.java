@@ -44,4 +44,11 @@ public class ViewServiceImpl implements ViewService{
 		return viewMapper.insert(view);
 	}
 
+	@Override
+	public List<View> listByLbId(Integer lbId) {
+		ViewExample example = new ViewExample();
+		example.or().andLbIdEqualTo(lbId);
+		return viewMapper.selectByExample(example);
+	}
+
 }

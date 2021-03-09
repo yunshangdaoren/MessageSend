@@ -62,7 +62,7 @@
 								<td>${SmsTask.viewName }</td>
 								<td>${SmsTask.content }</td>
 								<td>
-									<a class="a_smsTaskPhone" href="#" style="text-decoration:none;">
+									<a class="a_editSmsTaskPhone" href="#" style="text-decoration:none;">
 					    				<span class="label label-primary">编辑</span>
 					    			</a>
 								</td>
@@ -137,7 +137,7 @@
 			<div class="panel-heading">
     			<h5 class="panel-title">短信任务接收人号码详情</h5>
   			</div>
-			<div class="panel-body">Panel content</div>
+			<div class="panel-body"></div>
 		</div>
 	</div>
 </body>

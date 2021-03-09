@@ -40,5 +40,17 @@ public class LibraryInfoUtil {
 		}
 	}
 	
+	
+	/**
+	 * 设置查询出来的库实体类信息
+	 * @param departmentList
+	 */
+	public void setLibraryInfo(Library library) {
+		// 库类型名称
+		String libTypeName = libraryTypeServiceImpl.get(library.getLibtypeId()).getName();
+		// 设置库类型名称
+		library.setLibTypeName(libTypeName);
+	}
+	
 
 }

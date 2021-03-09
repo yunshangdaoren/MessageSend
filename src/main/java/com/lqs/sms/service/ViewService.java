@@ -8,6 +8,8 @@ public interface ViewService {
 	
 	List<View> list();
 	
+	List<View> listByLbId(Integer lbId);
+	
 	View get(Integer viId);
 	
 	int update(View view);
